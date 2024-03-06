@@ -30,3 +30,37 @@ age: 20,
 const myFunction = function(){
     console.log(typeof heros);
 }
+
+// ********************************************************************************************************************/
+
+//Stack(primitive), Heap (NOn-Primitive)
+
+let myYoutubename = "chandan@.com"
+
+let anothername = myYoutubename
+
+anothername = "codedesk"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+
+}
+
+let userTwo = userOne
+
+userTwo.email = "chandan@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
+
+
+
+
