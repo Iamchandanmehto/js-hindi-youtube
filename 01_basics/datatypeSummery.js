@@ -30,4 +30,27 @@ const heros = [ "shaktiman", "nagraj", "doga"]  // array
 const myFunction = function() {
     console.log("hello world");
 }
-console.log( typeof heros);
+//console.log( typeof heros);
+
+//******************************************************* */
+
+// Stack (Primitive), Heap ( Non- Primitive)
+
+let myYoutube = "iamchandan"
+let anothername = "chandan"
+
+console.log(myYoutube);
+console.log(anothername);
+
+let userOne = {
+    email:"user@google.com"
+
+}
+
+
+let usertwo = userOne
+
+usertwo.email = "chandan@google.com"
+
+console.log(userOne.email);
+console.log(usertwo.email);
