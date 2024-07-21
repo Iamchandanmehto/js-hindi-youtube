@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML eventss</title>
+    <style>
+        body{
+             background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <ul id="images">
+        <li><img width="200px" src="Sunset Over the Ganges, Rishikesh, India.jpeg" id="river" alt=""></li>
+        <li><img width="200px" src="download (4).jpeg" id="temple" alt=""></li>
+        <li><img width="200px" src="Munnar travel Destination.jpeg" id="kufri" alt=""></li>
+        <li><img width="200px" src="Hawa Mahal Jaipur.jpeg"  id="hawamahal" alt=""></li>
+        <li><img width="200px" src="Dalai Hills, Mussoorie.jpeg" id="buddha" alt=""></li>
+        <li><a style="color:rgb(240, 248, 255);" href="http://www.google.com" id="google"> Google</a></li>
+    </ul>
+
+    <script>
+        // document.getElementById('hawamahal').onclick = function(){
+        //     alert("HawaMahal aagye yrr!!")
+        // }
+        
+        //attachEvent()
+        //jQuery - on eventlistner
+
+         // type, timestamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey, ctrlkey, shiftkey, keycode
+
+        // document.getElementById('images').addEventListener('click', function(e){
+        //    console.log("clicked inside the ul");
+        // }, false)
+        // document.getElementById('hawamahal').addEventListener('click', function(e){
+        //    console.log("hawamahal clicked");
+        //    e.stopPropagation()
+        // },  false)
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     e.preventDefault()
+        //     console.log("google clicked")
+          
+        // }, false)
+       
+
+document.querySelector('#images').addEventListener
+('click', function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        log(e.target.id)
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+    }
+ 
+    
+}, false)
+// removeIt.parentNode.removeChlld(removeIt)
+
+    </script>
+</body>
+</html>
